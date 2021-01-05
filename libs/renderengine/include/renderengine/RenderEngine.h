@@ -142,6 +142,7 @@ public:
     virtual bool isProtected() const = 0;
     virtual bool supportsProtectedContent() const = 0;
     virtual bool useProtectedContext(bool useProtectedContext) = 0;
+    virtual void setViewportAndProjection(Rect viewPort, Rect sourceCrop) =0;
 
     // Renders layers for a particular display via GPU composition. This method
     // should be called for every display that needs to be rendered via the GPU.
